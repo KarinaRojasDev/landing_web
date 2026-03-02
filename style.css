@@ -1,0 +1,205 @@
+<<<<<<< HEAD
+=======
+
+:root {
+    --fondo-principal: #050816;
+    --fondo-secundario: #0c1427;
+
+    --color-principal: #0ea5e9;
+    --color-secundario: #22d3ee;
+
+    --rosa-acento: #ff2e88;
+    --morado-acento: #7c3aed;
+
+    --texto-principal: #e6edf3;
+    --texto-suave: #9aa4b2;
+}
+
+body{
+    background-color: var(--fondo-principal);
+    color: var(--texto-suave);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--texto-principal);
+}
+h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: var(--texto-principal);
+}
+main a {
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--fondo-secundario);
+    max-width: 1000px;
+    /* que no ocupe toda la pantalla en escritorio */
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: var(--fondo-principal);
+    width: 100%;
+}
+
+ul li {
+    font-size: 18px;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header a{
+    padding: 30px;
+    color: var(--texto-principal);
+    text-decoration: none;
+    transition: .3s;
+}
+header a:hover{
+    background-color: var(--color-secundario);
+    color: var(--fondo-secundario);
+    font-size: 18px;
+    transition: .3s;
+}
+#presentacion img{
+    border-radius: 250px;
+    width: 250px;
+    height: 250px;
+    border: 5px solid var(--rosa-acento);
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#presentacion p {
+    padding-top: 40px;
+}
+
+#presentacion {
+    background-color: var(--fondo-principal);
+    color: var(--texto-principal);
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--texto-suave);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+section p, section ul, section ol {
+    text-align: center;
+    max-width: 850px;
+    margin: 10px auto;
+}
+#sobreMi {
+    background-color: var(--fondo-secundario);
+}
+
+#tecnologias {
+    background-color: var(--fondo-principal);
+}
+
+#proyectos {
+    background-color: var(--fondo-secundario);
+    padding-bottom: 40px;
+}
+
+section.content {
+    background-color: var(--fondo-principal);
+}
+
+
+a {
+    color: var(--color-principal);
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--rosa-acento);
+    transition: .3s;
+}
+
+.cta a {
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--color-principal);
+    color: var(--texto-principal);
+    transition: .3s;
+}
+.cta a:hover {
+    background-color: var(--rosa-acento);
+    transition: .3s;
+}
+
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    #presentacion img {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .cta a {
+        width: 80%;
+        margin: 5px 0;
+    }
+}
+
+#proyectos img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+>>>>>>> 85b4d12 (Modified index.html and style.css; added assets and pages)

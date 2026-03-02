@@ -1,0 +1,140 @@
+
+:root {
+    --fondo-principal: #050816;
+    --fondo-secundario: #0c1427;
+    --color-principal: #0ea5e9;
+    --color-secundario: #22d3ee;
+    --rosa-acento: #ff2e88;
+    --texto-principal: #e6edf3;
+    --texto-suave: #9aa4b2;
+}
+
+
+body {
+    background-color: var(--fondo-principal);
+    color: var(--texto-suave);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1,h2,h3,h4 {
+    color: var(--texto-principal);
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--fondo-principal);
+    padding: 10px 0;
+}
+
+header a {
+    color: var(--texto-principal);
+    text-decoration: none;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    background-color: var(--color-secundario);
+    color: var(--fondo-secundario);
+    font-size: 18px;
+    transition: .3s;
+}
+
+main article, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: var(--fondo-secundario);
+    max-width: 1000px;
+    /* que no ocupe toda la pantalla en escritorio */
+}
+
+main article section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: var(--fondo-principal);
+    width: 100%;
+}
+
+p,main a,ul li,ol li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul,ol {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: var(--color-principal);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--rosa-acento);
+}
+
+
+.capturas figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    
+}
+
+.capturas figure img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin: 5px;
+    font-size: 16px;
+    color: var(--texto-suave);
+}
+
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    main article {
+        padding: 15px 20px;
+    }
+
+    main article section {
+        padding: 10px 15px;
+    }
+
+    .capturas figure img {
+        width: 250px;
+        height: 250px;
+    }
+}
+footer{
+    text-align: center;
+}
