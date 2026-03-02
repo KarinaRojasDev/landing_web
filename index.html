@@ -1,14 +1,182 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Porfolio</title>
 </head>
 <body>
-    <h1>Landing page</h1>
+    <header>
+        <nav>
+            <a href="#sobreMi">Sobre mí</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="assets/karina_rojas_cv.pdf" download class="btn-cv">Descarga CV</a>
+        </nav>
+        <section id="presentacion">
+            <img src="assets/foto_perfil_porfolio.png" alt="foto de perfil para porfolio">
+            <h1>Karina Rojas | Desarrolladora de Software</h1>
+            <h2>Desarrolladora de Aplicaciones Multiplataforma | Backend & Web Developer</h2>
+            <p>
+                Desarrollo aplicaciones web trabajando tanto en la capa backend con Java y Spring Boot como en la construcción de interfaces utilizando HTML, CSS y JavaScript. 
+                Me enfoco en crear soluciones estructuradas, con lógica sólida y una experiencia de usuario clara y funcional.
+            </p>
+            <p >
+                <strong>Tecnologías principales:</strong>
+                Java · Spring Boot · SQL · REST APIs · JavaScript · HTML5 · CSS3 · Firebase · Git
+            </p>
+            <section class="cta">
+                <a href="#proyectos" role="button">Ver proyectos</a>
+                <a href="#contacto" role="button">Contacto</a>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section id="sobreMi" class="content">
+            <h3>Sobre mí</h3>
+            <p>
+                Soy Karina, desarrolladora de software enfocada en aplicaciones multiplataforma y soluciones web. 
+                Me apasiona crear experiencias intuitivas, eficientes y bien estructuradas, tanto en la lógica del backend como en interfaces frontend.
+            </p>
+            <h4>Formación académica</h4>
+            <ul>
+                <li>
+                    Ciclo Formativo en Desarrollo de Aplicaciones Multiplataforma, CFP Universidad Alfonso X El Sabio (2023 – 2025)
+                </li>
+                <li>
+                    Bootcamp Desarrollo Web Full Stack (Marzo – Mayo 2026)
+                </li>
+            </ul>
+            <h4>Experiencia práctica</h4>
+            <ul>
+                <li>
+                    Prácticas en Esencial Global Eventos (Febrero – Mayo 2025): 
+                    participación en el diseño y desarrollo de una aplicación interna, 
+                    incluyendo prototipos de interfaz, definición de flujos de usuario, backend con Java y base de datos SQL.
+                </li>
+            </ul>
+            <h4>Habilidades</h4>
+            <p>
+                Durante mi formación y prácticas, he trabajado con Java, Kotlin, SQL, Spring Boot, HTML, CSS, JavaScript, Firebase y Git, 
+                aplicando mis conocimientos tanto en el backend como en la construcción de interfaces, con experiencia básica en testing y APIs REST.
+            </p>
+            <p>
+                Actualmente busco proyectos y retos que me permitan aplicar mis conocimientos full stack y seguir aprendiendo nuevas tecnologías, 
+                entregando soluciones completas y centradas en el usuario.
+            </p>
+        </section>
+
+        <section id="tecnologias" class="content">
+            <h3>Tecnologías</h3>
+            <p>
+                Durante mi formación y prácticas, he trabajado con un conjunto completo de tecnologías para el desarrollo de aplicaciones backend, 
+                integrando bases de datos, APIs REST y herramientas modernas de desarrollo.
+            </p>
+            <h4>Lenguajes de programación principales</h4>
+            <ul>
+                <li>JavaScript, HTML, CSS</li>
+                <li>Java</li>
+                <li>Kotlin</li>
+            </ul>
+
+            <h4>Frameworks y librerías</h4>
+            <ul>
+                <li>Spring Boot</li>
+            </ul>
+
+            <h4>Bases de datos</h4>
+            <ul>
+                <li>SQL, MySQL, Oracle, Firebase</li>
+            </ul>
+
+            <h4>Servicios y APIs</h4>
+            <ul>
+                <li>REST APIs (interfaz que permite que el backend y frontend se comuniquen de forma estructurada)</li>
+            </ul>
+
+            <h4>Herramientas</h4>
+            <ul>
+                <li>Git, GitHub, IntelliJ, VS Code, Eclipse</li>
+            </ul>
+
+            <h4>Otros conocimientos</h4>
+            <ul>
+                <li>XML, JSON, XSD, Testing básico</li>
+            </ul>
+        </section>
+
+        <section id="proyectos" class="content">
+            <h3>Proyectos Destacados</h3>
+            <article>
+                <h4>LiterAlura</h4>
+                <img src="assets/libros.jpg" alt="foto de biblioteca" width="400px" height="400px">
+                <p>
+                    Aplicación en Java con Spring Boot que permite buscar libros usando la API de Gutendex, 
+                    registrar información de libros y autores en PostgreSQL, 
+                    y consultar los datos por distintos criterios como idioma, año de nacimiento de los autores y descargas.
+                </p>
+                <p>Funcionalidades principales:</p>
+                <ul>
+                    <li>Buscar libros en la API de Gutendex y registrarlos en la base de datos</li>
+                    <li>Listar libros y autores registrados</li>
+                    <li>Filtrar autores vivos en un año específico y libros por idioma</li>
+                    <li>Mostrar información de descargas y detalles de cada libro</li>
+                </ul>
+                <p>
+                    <strong>Tecnologías:</strong> Java 17+, Spring Boot 3, Spring Data JPA/Hibernate, PostgreSQL, Gutendex API, Maven
+                </p>
+                <a href="https://github.com/KarinaRojasDev/LiterAlura" target="_blank" rel="noopener">Ver en GitHub</a>
+            </article>
+
+            <article>
+                <h4>NeoFichaje</h4>
+                <img src="assets/login.png" alt="logo de una app">
+                <p>
+                    NeoFichaje es una aplicación Android diseñada para la gestión de fichajes, vacaciones y documentos en entornos laborales. 
+                    Permite a los empleados registrar sus jornadas, solicitar permisos y consultar documentos, 
+                    mientras que los administradores supervisan y gestionan su equipo de manera eficiente desde cualquier lugar.
+                </p>
+                <p><strong>Tecnologías principales:</strong></p>
+                <ul>
+                    <li>Kotlin, XML, Android Studio</li>
+                    <li>Firebase Authentication, Firestore, Cloud Storage</li>
+                    <li>Google Sign-In, MaterialCalendarView</li>
+                </ul>
+                <p><strong>Funcionalidades clave:</strong></p>
+                <ul>
+                    <li>Fichaje con geolocalización</li>
+                    <li>Registro y login seguro con correo y Google</li>
+                    <li>Gestión de vacaciones y permisos</li>
+                    <li>Consulta y descarga de documentos (contratos, nóminas)</li>
+                    <li>Panel de administrador para control de empleados y aprobación de solicitudes</li>
+                    <li>Historial de actividad por usuario</li>
+                </ul>
+                <a href="https://github.com/KarinaRojasDev/proyecto-neo-fichaje" target="_blank" rel="noopener">Ver en GitHub</a>
+            </article>
+        </section>
+
+        <section class="content">
+            <h3>Habilidades</h3>
+            <ul>
+                <li>Planificación y organización</li>
+                <li>Adaptación rápida a nuevos entornos</li>
+                <li>Trabajo en equipo</li>
+                <li>Trabajo bajo presión</li>
+            </ul>
+        </section>
+        <footer>
+            <section id="contacto" class="contacto">
+                <h3>Datos de contacto</h3>
+                <p>Email: <a href="mailto:karinacodecompetent@gmail.com" title="Enviar correo a Karina Rojas">karinacodecompetent@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/karina-paola-rojas-jorge-812289313/" title="Perfil LinkedIn de Karina Rojas">LinkedIn</a></p>
+                <p>GitHub: <a href="https://github.com/KarinaRojasDev" title="Repositorio GitHub de Karina Rojas" target="_blank" rel="noopener">KarinaRojasDev</a></p>
+                <p>Descarga mi CV completo: <a href="assets/karina_rojas_cv.pdf" download class="btn-cv">Descargar CV</a></p>
+            </section>
+            <p>© 2026 Karina Rojas. Todos los derechos reservados.</p>
+        </footer>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
