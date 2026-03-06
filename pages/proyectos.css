@@ -138,3 +138,8 @@ figcaption {
 footer{
     text-align: center;
 }
+
+.figure{
+    display: flex;
+    flex-wrap: wrap;
+}
