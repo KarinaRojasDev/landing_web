@@ -14,7 +14,8 @@
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#tecnologias">Tecnologías</a>
             <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <a href="./pages/formulario.html#contacto-formulario">Formulario de contacto</a>
+            <a href="#contacto">Datos de contacto</a>
             <a href="assets/karina_rojas_cv.pdf" download class="btn-cv">Descarga CV</a>
         </nav>
     </header>
@@ -125,13 +126,13 @@
                 <article class="col-tec">
                     <h4>Herramientas</h4>
                     <ul>
-                        <li>Git, GitHub, IntelliJ, VS Code, Eclipse</li>
+                        <li>Git · GitHub · IntelliJ · VS Code · Eclipse</li>
                     </ul>
                 </article>
                 <article class="col-tec">
                     <h4>Otros conocimientos</h4>
                     <ul>
-                        <li>XML, JSON, XSD, Testing básico</li>
+                        <li>XML · JSON · XSD · Testing básico</li>
                     </ul>
                 </article>
             </section>
@@ -151,8 +152,13 @@
                 <section class="columna-proyecto-alura">
                     <section class="col-pro">
                         <h5>Funcionalidades principales:</h5>
+                        <p>
+                            Aplicación de consola que permite consultar y gestionar información
+                            de libros y autores obtenida desde una API externa, almacenando
+                            posteriormente los datos en una base de datos para su consulta.
+                        </p>
                         <ul>
-                            <li>Buscar libros en la API de Gutendex y registrarlos en la base de datos</li>
+                            <li>Buscar libros en la API de Gutendex y registrarlos en la BBDD</li>
                             <li>Listar libros y autores registrados</li>
                             <li>Filtrar autores vivos en un año específico y libros por idioma</li>
                             <li>Mostrar información de descargas y detalles de cada libro</li>
@@ -161,7 +167,10 @@
                     <section class="col-pro">
                         <h5>Tecnologías:</h5>
                         <p>
-                            Java 17+, Spring Boot 3, Spring Data JPA/Hibernate, PostgreSQL, Gutendex API, Maven
+                            El proyecto fue desarrollado con el ecosistema de Spring para crear
+                            una aplicación estructurada con persistencia de datos y consumo de APIs externas.
+                        </p>
+                        <p> Java 17+ · Spring Boot 3 · Spring Data · JPA/Hibernate · PostgreSQL · Gutendex API · Maven
                         </p>
 
                     </section>
@@ -187,35 +196,45 @@
                 <section class="columna-proyecto-neofichaje">
                     <section class="col-neo">
                         <h5>Tecnologías:</h5>
-                        <!-- FALTA TEXTO  -->
+                        <p>
+                            La aplicación fue desarrollada para Android utilizando Kotlin y XML,
+                            siguiendo las buenas prácticas de desarrollo en Android Studio.
+                            Se integraron distintos servicios de Firebase para la gestión de
+                            usuarios, almacenamiento seguro de documentos y base de datos en la nube.
+                        </p>
+                        <p>Kotlin · XML · Android Studio · Firebase Authentication · Firestore · Cloud Storage ·
+
+                            Google Sign-In · MaterialCalendarView
+                        </p>
                     </section>
                     <section class="col-neo">
                         <h5>Funcionalidades principales:</h5>
+                        <p>
+                            La aplicación permite a los empleados gestionar su jornada laboral,
+                            solicitudes y documentos desde el móvil, mientras que los administradores
+                            pueden supervisar y aprobar las diferentes acciones del personal.
+                        </p>
                         <ul>
                             <li>Fichaje con geolocalización</li>
                             <li>Registro y login seguro con correo y Google</li>
                             <li>Gestión de vacaciones y permisos</li>
                             <li>Consulta y descarga de documentos (contratos, nóminas)</li>
-                            <li>Panel de administrador para control de empleados y aprobación de solicitudes</li>
+                            <li>Panel de administrador para control de empleados</li>
                             <li>Historial de actividad por usuario</li>
-                        </ul>
-                        <ul>
-                            <li>Kotlin, XML, Android Studio</li>
-                            <li>Firebase Authentication, Firestore, Cloud Storage</li>
-                            <li>Google Sign-In, MaterialCalendarView</li>
                         </ul>
                     </section>
                 </section>
-                <section class="enlaces-neo">
+                <section class="enlaces-proyecto">
                     <a href="./pages/proyectos.html" role="button">Ver detalles del proyecto</a>
-                    <a href="https://github.com/KarinaRojasDev/proyecto-neo-fichaje" target="_blank" rel="noopener">Ver en GitHub</a>
+                    <a href="https://github.com/KarinaRojasDev/proyecto-neo-fichaje" target="_blank" rel="noopener">Ver
+                        en GitHub</a>
                 </section>
             </article>
         </section>
 
-        <section class="contenido">
+        <section id="habilidades" class="contenido">
             <h3>Habilidades</h3>
-            <ul>
+            <ul class="habilidades">
                 <li>Planificación y organización</li>
                 <li>Adaptación rápida a nuevos entornos</li>
                 <li>Trabajo en equipo</li>
