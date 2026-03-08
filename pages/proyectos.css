@@ -9,13 +9,16 @@
     --texto-suave: #9aa4b2;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: var(--fondo-principal);
     color: var(--texto-suave);
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
 
 h1,h2,h3,h4 {
@@ -25,10 +28,9 @@ h1,h2,h3,h4 {
 
 header nav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
     background-color: var(--fondo-principal);
-    padding: 10px 0;
 }
 
 header a {
@@ -54,8 +56,7 @@ main article, footer{
     margin: 20px auto;
     border-radius: 10px;
     background-color: var(--fondo-secundario);
-    max-width: 1000px;
-    /* que no ocupe toda la pantalla en escritorio */
+    max-width: 1100px;
 }
 
 main article section {

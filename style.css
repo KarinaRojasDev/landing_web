@@ -1,4 +1,3 @@
-
 :root {
     --fondo-principal: #050816;
     --fondo-secundario: #0c1427;
@@ -13,50 +12,57 @@
     --texto-suave: #9aa4b2;
 }
 
-body{
-    background-color: var(--fondo-principal);
-    color: var(--texto-suave);
+* {
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: var(--fondo-principal);
     font-family: Arial, sans-serif;
-}
-p {
-    font-size: 18px;
-    line-height: 2;
-}
-
-h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: var(--texto-principal);
-}
-h4 {
-    font-size: 22px;
-    margin-bottom: 25px;
-    color: var(--texto-principal);
-}
-main a {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--texto-suave);
 }
 
+/* Barra de navegación */
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header a {
+    padding: 25px;
+    color: var(--texto-principal);
+    text-decoration: none;
+    transition: .3s;
+}
+
+header a:hover {
+    background-color: var(--color-secundario);
+    color: var(--fondo-secundario);
+    transition: .3s;
+}
+
+/* Main - sección presentación*/
 main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /* secciones van en columnas verticales */
     align-items: center;
+    justify-content: center;
     padding: 20px 40px;
     margin: 20px auto;
     border-radius: 10px;
     background-color: var(--fondo-secundario);
-    max-width: 1000px;
-    /* que no ocupe toda la pantalla en escritorio */
+    max-width: 1100px;
 }
 
 main section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 25px 25px;
     margin: 10px 0;
     border-radius: 10px;
@@ -64,49 +70,282 @@ main section {
     width: 100%;
 }
 
-ul li {
-    font-size: 18px;
+#presentacion {
+    background-color: var(--fondo-principal);
+    color: var(--texto-suave);
 }
-header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-header a{
-    padding: 30px;
-    color: var(--texto-principal);
-    text-decoration: none;
-    transition: .3s;
-}
-header a:hover{
-    background-color: var(--color-secundario);
-    color: var(--fondo-secundario);
-    font-size: 18px;
-    transition: .3s;
-}
-#presentacion img{
+
+#presentacion img {
     border-radius: 250px;
     width: 250px;
     height: 250px;
     border: 5px solid var(--rosa-acento);
     display: block;
     margin-top: 50px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 }
-#presentacion p {
-    padding-top: 40px;
+
+
+h1 {
+    font-size: 36px;
+    text-align: center;
 }
 
-#presentacion {
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#presentacion h3{
+    color: var(--texto-suave);
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/* sección sobre mi */
+#sobre-mi{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--texto-principal);
+}
+h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--texto-suave);
+}
+.columna-sobre-mi{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--fondo-secundario);
+    width: 100%;
+    gap: 40px;
+}
+
+/* primera columna Formación academica */
+.col:first-child{
+    border-right: 2px solid var(--texto-suave);
+    padding-right: 50px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.col:last-child{
+    padding-right: 20px;
+}
+.col ul li{
+    text-align: justify;
+}
+.destacado{
+    transition: .3s;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 10px;
     background-color: var(--fondo-principal);
     color: var(--texto-principal);
 }
-
-h1, h2 {
-    text-align: center;
-    color: var(--texto-suave);
+.destacado:hover {
+    color: var(--rosa-acento);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: .3s; 
 }
+
+
+/* sección tecnologias */
+
+.columna-tecnologias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch; /* todos los hijos tiene  el mismo alto */
+    width: 100%;
+    gap: 40px;
+}
+.col-tec {
+    width: 30%;
+    background-color: var(--fondo-secundario);
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.col-tec:hover{
+    box-shadow: 0 4px 15px var(--color-secundario); /* desplazamiento horizontal vertical difuminado */
+    font-size: 17px;
+    transition: .5;
+}
+
+/* sección proyectos */
+/* proyecto literAlura */
+#proyectos img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.columna-proyecto-alura {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+    border-bottom: 5px solid var(--texto-suave);
+}
+.col-pro{
+    flex:1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.col-pro h5{
+    margin-top: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.col-pro:first-child{
+    border-right: 2px solid var(--texto-suave);
+    padding-right: 30px;
+    padding-left: 20px;
+    margin-right: 20px;
+    border-radius: 0;
+}
+.col-pro:last-child{
+    padding-right: 30px;
+    padding-left: 0px;
+    margin-right: 20px;
+}
+
+.enlaces-proyecto{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    background-color: var(--fondo-secundario);
+}
+
+.enlaces-proyecto a{
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: var(--fondo-principal);
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* LINEA DIVIDE PROYECTO */
+.liter-alura{
+    padding: 30px;
+    border-bottom: 2px solid var(--texto-suave);
+}
+
+/* proyecto neoFichaje */
+.neo-fichaje h4{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.neo-fichaje p{
+    text-align: justify;
+}
+.columna-proyecto-neofichaje{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    padding: 0;
+    margin-top: 40px;
+    align-items: flex-start;
+    border-bottom: 5px solid var(--texto-suave);
+}
+.col-neo{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.col-neo h5{
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.col-neo ul li{
+    line-height: 2;
+}
+.col-neo:first-child{
+    padding-right: 30px;
+    padding-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.col-neo:last-child{
+    border-left: 2px solid var(--texto-suave);
+    border-radius: 0;
+    padding-right: 30px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.enlaces-neo{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    background-color: var(--fondo-secundario);
+}
+
+.enlaces-neo a{
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: var(--fondo-principal);
+    font-weight: bold;
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VER CODIGO Y MODIFICAR */
+
+
 
 section {
     display: flex;
@@ -117,13 +356,13 @@ section {
     margin: 5px 0;
     text-align: center;
     border-radius: 10px;
-}
-section p, section ul, section ol {
+} 
+section p, section ul {
     text-align: center;
     max-width: 850px;
     margin: 10px auto;
 }
-#sobreMi {
+#sobre-mi {
     background-color: var(--fondo-secundario);
 }
 
@@ -136,7 +375,7 @@ section p, section ul, section ol {
     padding-bottom: 40px;
 }
 
-section.content {
+section.contenido {
     background-color: var(--fondo-principal);
 }
 
@@ -184,12 +423,7 @@ a:hover {
     }
 }
 
-#proyectos img {
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
+
 
 ul {
     list-style-type: none;
